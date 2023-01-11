@@ -6,7 +6,7 @@ import * as dotenv from 'dotenv';
 dotenv.config()
 console.log(process.env.MONGO_URL)
 const app = express();
-const PORT = 4000;
+const PORT = process.env.PORT;
 
 //connection:
 //const MONGO_URL = "mongodb://127.0.0.1";
